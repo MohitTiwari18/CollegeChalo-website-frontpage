@@ -1,0 +1,490 @@
+/*Css code for the Univeral selector*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body, html {
+    max-width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/*css code for the navigation bar*/
+
+header{
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar{
+    margin-left: 50px;
+}
+.navbar img{
+padding: 10px 5px;
+}
+.email{
+    margin-right:50px ;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.container .email a{
+text-decoration: none;   /*for removing the underline from the mail*/
+color: rgb(6, 139, 247);
+}
+
+
+@media (max-width: 768px) {
+.container{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    padding-top:10px ;
+}
+.container .email a{
+text-decoration: none;   /*for removing the underline from the mail*/
+color: rgb(6, 139, 247);
+}
+
+}
+
+/*css code for the section-a*/
+
+.section-a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden; /* Ensure the pseudo-element does not affect layout */
+}
+.section-a::before{
+     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('image/1.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5); /* Adjust brightness */
+    z-index: -1; /* Ensure it is behind the content */
+}
+.content{
+     color: white;
+    margin-right: auto;
+    padding: 20px;
+    z-index: 1;
+}
+.content .content-image {
+    padding-bottom:10px;
+}
+.content .content-image img{
+    border-radius: 4px;
+}
+.content h1 {
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    
+}
+.content h3{
+    display: inline-block;
+    background-color: white;
+    color:  rgb(6, 139, 247);;
+    margin-bottom:10px;
+    font-size: xx-large;
+    border-radius: 4px;
+    padding: 5px;
+    
+}
+.content-2 {
+    border: 2px solid white;
+    padding: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+/* Section-a Form Css Coming From Here*/
+
+.form-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    z-index: 1; /* Ensure it is above the background */
+    margin: 20px 50px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form h2 {
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.selectAll{
+    display: flex;
+    justify-content: space-between;
+}
+.selectAll select{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    width: 100%;
+}
+select{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .section-a {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .form-section {
+        width: 90%;
+    }
+    .selectAll{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+
+/*section-b css code start from here*/
+
+.section-b{
+
+    background-color: #f8f9fa;
+}
+.section-b h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+    margin: 3rem 0;
+}
+.university{
+
+display: flex;
+padding: 20px;
+width: 100%;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 20px auto;
+}
+.university-container{
+padding: 10px;
+flex-basis: 30%;
+margin: 10px;
+text-align: center;
+background-color: white;
+font-size: 1.6rem;
+box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+align-items: center;
+
+}
+.university-container h2{
+    color:#007BFF ;
+}
+.university-container p{
+padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .university{
+        width: 100%;
+        flex-direction: column;
+    }
+    .university-container{
+        text-align: center;
+    }
+}
+
+
+/*section-c CSS code starting from here*/
+.section-c{
+    background-color: white;
+}
+.section-c h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+    margin: 3rem 0;
+}
+.allCourses {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 100%;
+    gap: 20px; /* Adjust the gap between course cards as needed */
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.ugCourses {
+    position: relative;
+   flex-basis: 23%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 20px; /* Adjust space between rows */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color:rgb(231, 243, 248);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ugCourses p {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.time-img, .clock-img {
+
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.time-img img, .clock-img img {
+    margin-right: 5px;
+}
+
+button {
+    margin-top: auto;
+    margin-bottom: 10px; /* Adjust this value to move the button upwards */
+    padding: 10px 10px;
+    border: none;   
+    border-radius: 4px;
+    cursor: pointer;
+    background-color:rgb(231, 243, 248); ;
+    border: 1px solid  rgb(98, 98, 244);
+}
+
+button a {
+    color:blue;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.about-course{
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media (max-width: 768px) {
+    .allCourses{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+}
+
+
+/*section-d CSS code start from here*/
+.section-d{
+    background-color: #f8f9fa;
+
+}
+.section-d h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+    margin: 3rem 0;
+}
+
+
+
+/*section-e css start from here*/
+.section-e{
+    background-color: white;
+
+}
+.section-e h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+    margin: 3rem 0;
+}
+.work{
+    width: 100%;
+    display: flex;
+    gap:1rem;
+    padding: 50px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+   
+}
+.workBox{
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+    margin: 10px 10px;
+}
+.workBox img{
+padding-bottom: 10px;
+height: 5rem;
+
+}
+.workBox h2{
+font-size: large;
+padding-bottom: 10px;
+}
+.workBox p{
+padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .work{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+
+/*section-f CSS code start from here*/
+
+.section-f{
+    background-color: #f8f9fa;
+    
+
+}
+.section-f h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+    margin: 3rem 0;
+}
+
+.recruiters{
+    display: grid;
+    grid: 80px / auto auto auto auto auto auto;
+    gap: 20px; /* Space between items */
+    margin: 20px;
+    
+}
+.recruitersBox{
+background-color:rgb(232, 244, 249); 
+box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.recruitersBox img{
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .recruiters {
+        grid: 100px / auto auto;
+    }
+}
+
+
+/* footer CSS code start from here*/
+
+footer {
+    background-color:black; /* Adjust as needed */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footerContainer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; /* Space between footer items and copyright */
+}
+
+.footerMail {
+    text-align: right;
+}
+
+.footerMail h3 {
+    margin: 0;
+}
+
+.footerMail p {
+    margin: 5px 0 0 0;
+}
+
+.copyright {
+    margin-top: 10px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footerContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+}
